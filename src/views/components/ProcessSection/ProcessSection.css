@@ -1,0 +1,66 @@
+.build-process {
+  padding-block: var(--section-space);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+}
+
+.build-process .eyebrow {
+  color: var(--color-accent);
+}
+
+.build-process h2 {
+  max-width: 650px;
+  margin: 1.3rem 0 3.5rem;
+}
+
+.build-process ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.build-process li {
+  padding-top: 1.5rem;
+  border-top: 1px solid #d2d9e155;
+}
+
+.build-process li > span {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--color-accent);
+  color: var(--color-ink);
+  font-size: 0.8rem;
+}
+
+.build-process h3 {
+  text-transform: uppercase;
+  margin: 1.7rem 0 1rem;
+  font-size: 2rem;
+}
+
+.build-process li p {
+  color: #d2d9e1;
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .build-process ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .build-process ol {
+    grid-template-columns: 1fr;
+  }
+  .build-process h3 {
+    margin-top: 1rem;
+  }
+}

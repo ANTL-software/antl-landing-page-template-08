@@ -1,0 +1,66 @@
+.strengths-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: var(--color-accent);
+  padding: 2rem 5%;
+  gap: 2rem;
+}
+
+.strengths-strip > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 2rem;
+  border-right: 1px solid #182c4840;
+}
+
+.strengths-strip > div:first-child {
+  padding-left: 0;
+}
+
+.strengths-strip > div:last-child {
+  border: 0;
+}
+
+.strengths-strip svg {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.strengths-strip strong {
+  font-size: 0.8rem;
+}
+
+.strengths-strip p {
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .strengths-strip {
+    gap: 1rem;
+  }
+  .strengths-strip > div {
+    padding-inline: 0.5rem;
+  }
+  .strengths-strip strong {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .strengths-strip {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-block: 1.5rem;
+  }
+  .strengths-strip > div {
+    border: 0;
+    border-bottom: 1px solid #182c4840;
+    padding: 0 0 1rem;
+  }
+  .strengths-strip > div:last-child {
+    padding-bottom: 0;
+  }
+}
